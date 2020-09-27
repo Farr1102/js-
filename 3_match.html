@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var input=prompt("请输入");
+    var arr=input.match(/([我卧]|wo)\s*([槽操草艹]|cao)/ig);
+    if(arr!=null){
+      document.write(`<h1 style="color:red">在位置"${arr}",发现敏感词"${arr[0]}",禁止发送</h1>`);
+    }else{
+      document.write(`<h1 style="color:green">然哥说:"${input}"</h2>`)
+    }
+    
+  </script>
+</body>
+</html>

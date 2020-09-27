@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var input=prompt("请输入对话");
+    var i=input.search(/([我卧]|wo)\s*([槽操草艹]|cao)/i);
+    if(i!=-1){
+      document.write(`<h1 style="color:red">发现敏感词,不允许发送</h1>`);
+    }else{
+      document.write(`<h1 style="color:green">然哥说:${input}</h1>`);
+    }
+  </script>
+  
+</body>
+
+</html>
